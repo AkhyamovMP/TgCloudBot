@@ -4,7 +4,8 @@ import manager
 
 bot = telebot.TeleBot(config.bot_token)
 
-manager.create_folder()
+for n in range(0, 1000):
+    print(n, '-', manager.translate_folder_id(n))
 
 @bot.message_handler(commands=["start"])
 def start(message, res=False):
