@@ -15,4 +15,4 @@ def translate_folder_id(id):
             folder_id += numbers[0]
     if folder_id[-1] == '0' and len(folder_id) > 3:
         folder_id = folder_id[:-1]
-    return folder_id
+    return 'FOLDER_'+folder_id
